@@ -1,0 +1,26 @@
+.contact-us-section {
+  background-color: #D9D9D9;
+}
+.contact-us-section .contact-us {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-us-section .contact-us .form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-us-section .contact-us .form-group label {
+  margin-right: 20px;
+  width: 20%;
+}
+.contact-us-section .contact-us .form-group input,
+.contact-us-section .contact-us .form-group textarea {
+  width: 100%;
+  border: none;
+  padding: 7px;
+}
+.contact-us-section .contact-us button {
+  margin-left: 160px;
+}
+
+/*# sourceMappingURL=contact.css.map */

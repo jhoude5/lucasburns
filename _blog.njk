@@ -1,0 +1,46 @@
+---
+layout: layout.html
+pagination:
+    data: blogs
+    size: 1
+    alias: blogs
+permalink:  "blog/{{ blogs.fields.blogTitle | slug }}/index.html"
+eleventyComputed: 
+    title: "{{ blogs.fields.blogTitle }}"
+---
+<main>
+<div class="container"><div class="row">
+    <h1>{{ blogs.fields.blogTitle }}</h1>
+    <img src="{{ blogs.fields.mainImage.fields.file.url }}?w=400" />
+    <div>{{ blogs.fields.blogInfo | renderRichTextAsHtml | safe }}</div>
+    </div></div>
+    <section class="subscribe">
+            <div class="subscribe">
+    <div class="container">
+<div class="row">
+    <div class="col-lg-6">
+     <h2>Subscribe to my newsletter</h2>
+    </div>
+    <div class="col-lg-6 entry-form">
+        <form
+        action="https://formspree.io/f/manwwnwg"
+        method="POST"
+      >
+      <div class="form-group">
+        <label class="visually-hidden">Your email:</label>
+        
+            <input type="email" name="email" placeholder="Your email">
+          
+      </div>
+        
+        <!-- your other form fields go here -->
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  
+
+</div>
+</div>
+</div>
+    </section>
+</main>

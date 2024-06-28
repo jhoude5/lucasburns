@@ -1,0 +1,118 @@
+---
+layout: layout.html
+permalink:  "testimonials/index.html"
+eleventyComputed: 
+    title: "Testimonials"
+---
+<main>
+<div class="container">
+<div class="row">
+    <h1>Testimonials</h1>
+     </div></div>
+    <section id='apply' class="applynow">
+            <div class="container center apply">
+                <h2>Apply Now</h2>
+                <p>Get started now. Get pre-approved for a mortgage.</p>
+                <p>Secure Online Application.</p>
+                <a class='btn btn-primary' href='https://getmy.mortgage/yourfavottbrkr#/application-widget/welcome?locale=en-CA'>
+                    Start Application</a>
+            </div>
+    </section>
+    <section class="testimonials>
+            <div class="container"><div class="row">
+            {% for testimonial in testimonials %}
+                        <article>
+                            <div class="testimonial--wrapper" id={index}>
+                                <div class="testimonial-grid">
+                                    <div class="teaser-grid__image">
+                                          <img src="{{ testimonial.fields.image.fields.file.url }}?w=400" />
+                                        </div>
+                                        <div class="testimonial-grid__description">{{ testimonial.fields.testimonial | renderRichTextAsHtml | safe }}</div>
+                                        <div class="testimonial-grid__title">{{testimonial.fields.name}}</div>
+                                        
+                                    
+                                </div>
+                              </div>
+                        </article>
+                    {% endfor %}
+            </div></div>
+    </section>
+    <section class="subscribe">
+            <div class="subscribe">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+        <h2>Subscribe to my newsletter</h2>
+        </div>
+        <div class="col-lg-6 entry-form">
+            <form
+            action="https://formspree.io/f/manwwnwg"
+            method="POST"
+                >
+                <div class="form-group">
+                    <label class="visually-hidden">Your email:</label>
+                    
+                        <input type="email" name="email" placeholder="Your email">
+                    
+                </div>
+                
+                <!-- your other form fields go here -->
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+    </div>
+  
+
+</div>
+</div>
+</div>
+    </section>
+</main>
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Lucas Burns</h2>
+                    <p class="footer-mortgage-info">Mortgage Agent (Level 2)</p>
+                    <p class="footer-mortgage-licence-info">Licence #M20001298</p>
+                    <a href='https://martelmortgages.ca/'>
+                        <img class='footer-martel-logo' src="/images/martellogo.jpeg" alt='martel logo'/>
+                    </a>
+                </div>
+                <div class="martel-head-office center col-lg-4">
+                    <h3>Head Office</h3>
+                    <p class="martel-info">Martel Mortgages<br/>
+                        FSCO # 13015<br/>
+                        Building B3101 County Road 29<br/>
+                        Brockville, ON K6V 5T4<br/>
+                        1.855.320.2464 ext 118</p>
+                    
+                </div>
+                <div class="lucas-burns-info center col-lg-4">
+                    <h3>Telephone</h3>
+                    <a href='tel:613-298-1522'>(613) 298-1522</a>
+                    <h3 class="email">Email</h3>
+                    <a href='mailto:lburns@martelmortgages.ca'>lburns@martelmortgages.ca</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>Copyright © All Rights Reserved</p>
+                    </div>
+                    <div class="social-icons">
+                        <a class="social-icon" href='https://www.facebook.com/search/top?q=lucas%20burns%20-%20martel%20mortgages%20-%20licensed%20mortgage%20agent'>
+                            <img class="color" src="../images/facebook.svg" alt='facebook logo' />
+                            <img class="black" src="../images/black-facebook.png" alt='facebook logo' />
+                        </a>
+                        <a class="social-icon" href='https://www.linkedin.com/in/lucas-burns-b74b14/'>
+                            <img class="color" src="../images/linkedin.svg" alt='linkedin logo' />
+                            <img class="black" src="../images/black-linkedin.svg" alt='linkedin logo' />
+                        </a>
+                        <a class="social-icon" href='https://www.instagram.com/lucasburnsmortgages/'>
+                            <img class="color" src="../images/instagram.svg" alt='instagram logo' />
+                            <img class="black" src="../images/black-instagram.png" alt='instagram logo' />
+                        </a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>

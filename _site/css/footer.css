@@ -1,0 +1,59 @@
+footer {
+  margin-top: 75px;
+}
+footer .footer-martel-logo {
+  max-width: 125px;
+}
+footer .footer-mortgage-info {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+footer .footer-mortgage-licence-info {
+  font-size: 18px;
+}
+footer .lucas-burns-info {
+  margin-top: 6px;
+}
+footer .lucas-burns-info .email {
+  margin-top: 40px;
+}
+footer .lucas-burns-info a {
+  color: black;
+}
+footer .martel-head-office {
+  margin-top: 6px;
+}
+footer .footer-bottom {
+  position: relative;
+}
+footer .footer-bottom .social-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  display: flex;
+}
+footer .footer-bottom .social-icons img {
+  width: 100%;
+  max-width: 30px;
+  margin-left: 10px;
+}
+footer .footer-bottom .social-icons .social-icon .black {
+  display: none;
+}
+footer .footer-bottom .social-icons .social-icon:hover .black, footer .footer-bottom .social-icons .social-icon:focus .black {
+  display: block;
+}
+footer .footer-bottom .social-icons .social-icon:hover .color, footer .footer-bottom .social-icons .social-icon:focus .color {
+  display: none;
+}
+footer .footer-bottom .copyright {
+  margin-top: 100px;
+}
+footer .footer-bottom .copyright p {
+  font-size: 16px;
+}
+footer .martel-info {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=footer.css.map */

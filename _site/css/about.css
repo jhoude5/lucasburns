@@ -1,0 +1,10 @@
+.about {
+  max-width: 986px;
+  margin: 0 auto;
+}
+.about .about-signature {
+  font-family: "Licorice";
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=about.css.map */

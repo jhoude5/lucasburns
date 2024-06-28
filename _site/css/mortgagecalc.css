@@ -1,0 +1,27 @@
+.mortgage-calculator {
+  padding: 20px 0;
+}
+@media (min-width: 1024px) {
+  .mortgage-calculator {
+    padding: 80px 0;
+  }
+}
+.mortgage-calculator h2 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .mortgage-calculator h2 {
+    text-align: left;
+  }
+}
+.mortgage-calculator .calc div:first-child {
+  display: flex;
+}
+.mortgage-calculator .calc div:first-child div:last-child a {
+  display: none;
+}
+.mortgage-calculator .calc-info {
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=mortgagecalc.css.map */

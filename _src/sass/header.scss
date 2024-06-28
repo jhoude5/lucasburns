@@ -1,0 +1,156 @@
+header {
+    border-bottom: none;
+    .home-logo {
+        max-width: 63px;
+        @media(min-width: 768px) {
+            max-width: 75px;
+        }
+        @media(min-width: 1024px) {
+            max-width: 100px;
+        }
+    }
+
+    .btn-header {
+        background-color: white;
+        color: #0B4470;
+        padding: 15px;
+        border-radius: 15px;
+        margin: 10px 0;
+        &:hover,
+        &:focus {
+            background-color: #D9D9D9;
+            color: black;
+        }
+    }
+    .book-now {
+        background-color: #0B4470;
+        .container {
+            display: flex;
+            justify-content: end;
+        }
+        
+        p {
+            color: white;
+            font-family: Didot;
+            margin-right: 20px;
+            margin-top: 26px;
+            @media(min-width: 1024px) {
+                margin-top: 20px; 
+            }
+        }
+        a {
+            max-width: 190px;
+        }
+    }
+    .nav-menu {
+        li {
+            margin-left: 10px;
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover,
+                &:focus {
+                    border-bottom: 2px solid black;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        @media(min-width: 1024px) {
+            display: block;
+        }
+        .header-name {
+            font-family: koh santepheap;
+            font-size: 44px;
+            color: #0B4470;
+            margin: 22px 0 0;
+            line-height: 44px; 
+            text-align: center; 
+        }
+        .header-mortgage-info {
+            font-size: 22px !important;
+            font-family: lato;
+            color: #0B4470;
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .header-martel-info {
+            text-align: center;
+            color: #0B4470;
+            font-size: 18px;
+        }
+    }
+    
+    
+   
+}
+.header-title-img {
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 53px;
+    @media(min-width: 768px) {
+        padding-top: 40px;
+    }
+    @media(min-width: 768px) {
+        padding-top: 80px;
+    }
+    
+
+    h1.header-title {
+        margin-top: 0px !important;
+        // max-width: 450px;
+        text-align: center;
+        @media(min-width: 768px) {
+            text-align: left;
+            margin-top: 50px !important;
+            max-width: 320px;
+        }
+        @media(min-width: 1024px) {
+            margin-top: 70px !important;
+            max-width: 420px;
+        }
+        @media(min-width: 1200px) {
+            max-width: 635px;
+        }
+        @media(min-width: 1400px) {
+            max-width: 817px;
+        }
+    }
+    .header-bold {
+        font-weight: bold !important;
+    }
+    .lucas-burns-header-img {
+        max-width: 300px;
+        margin: 0 auto;
+        @media(min-width: 768px) {
+            max-width: 400px;
+        }
+        @media(min-width: 1024px) {
+            max-width: 503px;
+        }
+    
+    }
+}
+.martel-img-wrapper {
+    overflow: hidden;
+    .martel-header-img {
+        width: 100vh; 
+        @media(min-width: 768px) {
+            width: 100%;
+        }
+        
+    }
+}
+.mobile-menu {
+    display: block;
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
