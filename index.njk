@@ -5,11 +5,11 @@ layout: layout.html
         <div class="header-title-img container">
             <div class="row">
                 <h1 class="header-title">Providing services in <span class="header-bold">Ottawa</span> and throughout <span class="header-bold">Ontario</span></h1>
-                <img class='lucas-burns-header-img' src="/images/lucasburns.png" alt='Lucas Burns' /> 
+                <img class='lucas-burns-header-img' src="/img/lucasburns.png" alt='Lucas Burns' /> 
             </div>
         </div>
         <div class="martel-img-wrapper">
-            <img class='martel-header-img' src="/images/martelimage.jpeg" alt=''/>
+            <img class='martel-header-img' src="/img/martelimage.jpeg" alt=''/>
         </div>
         <section id='services' class="services center">
             <div class="container">
@@ -181,13 +181,17 @@ layout: layout.html
                   <h2>Check out my Blog</h2>
                   <div>
                     {% for blog in blogs.slice(0,1) %}
-                        <article>
-                            <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" />
-                            <h3>{{ blog.fields.blogTitle }}</h3>
-                            <p>{{ blog.fields.date }}</p>
-                            <p>{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}
-                            <a href="/blog/{{ blog.fields.blogTitle | slug }}">Read the post</a>
-                        </article>
+                    <div className="blog--wrapper card" id={{ blog.fields.id }}>
+                        <div className="blog-teaser">
+                                <div className="blog__image">
+                                  <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" />
+                                </div>
+                                <div className="blog__date">{{ blog.fields.date }}</div>
+                                <div className="blog__title">{{ blog.fields.blogTitle }}</div>
+                                <div className="blog__description">{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}</div>
+                                <a href=/blog/{{ blog.fields.blogTitle | slug }}>Read full story </a>
+                        </div>
+                      </div>
                     {% endfor %}
                   
                     </div>
@@ -209,7 +213,7 @@ layout: layout.html
                     <p class="footer-mortgage-info">Mortgage Agent (Level 2)</p>
                     <p class="footer-mortgage-licence-info">Licence #M20001298</p>
                     <a href='https://martelmortgages.ca/'>
-                        <img class='footer-martel-logo' src="/images/martellogo.jpeg" alt='martel logo'/>
+                        <img class='footer-martel-logo' src="/img/martellogo.jpeg" alt='martel logo'/>
                     </a>
                 </div>
                 <div class="martel-head-office center col-lg-4">
@@ -233,16 +237,16 @@ layout: layout.html
                     </div>
                     <div class="social-icons">
                         <a class="social-icon" href='https://www.facebook.com/search/top?q=lucas%20burns%20-%20martel%20mortgages%20-%20licensed%20mortgage%20agent'>
-                            <img class="color" src="../images/facebook.svg" alt='facebook logo' />
-                            <img class="black" src="../images/black-facebook.png" alt='facebook logo' />
+                            <img class="color" src="/img/facebook.svg" alt='facebook logo' />
+                            <img class="black" src="/img/black-facebook.png" alt='facebook logo' />
                         </a>
                         <a class="social-icon" href='https://www.linkedin.com/in/lucas-burns-b74b14/'>
-                            <img class="color" src="../images/linkedin.svg" alt='linkedin logo' />
-                            <img class="black" src="../images/black-linkedin.svg" alt='linkedin logo' />
+                            <img class="color" src="/img/linkedin.svg" alt='linkedin logo' />
+                            <img class="black" src="/img/black-linkedin.svg" alt='linkedin logo' />
                         </a>
                         <a class="social-icon" href='https://www.instagram.com/lucasburnsmortgages/'>
-                            <img class="color" src="../images/instagram.svg" alt='instagram logo' />
-                            <img class="black" src="../images/black-instagram.png" alt='instagram logo' />
+                            <img class="color" src="/img/instagram.svg" alt='instagram logo' />
+                            <img class="black" src="/img/black-instagram.png" alt='instagram logo' />
                         </a>
                     </div>
                 </div>

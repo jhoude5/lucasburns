@@ -2,7 +2,7 @@
   "name": "lbm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.njk",
   "scripts": {
     "watch:sass": "sass --watch _src/sass:_site/css",
     "build:sass": "sass _src/sass:_site/css",

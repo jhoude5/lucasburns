@@ -35,6 +35,7 @@
           <link rel="stylesheet" href="/css/services.css">
           <link rel="stylesheet" href="/css/subscribe.css">
           <link rel="stylesheet" href="/css/testimonials.css">
+          <link rel="stylesheet" href="/css/blog.css">
           <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jennifer Houde" />
           </head>
 	</head>
@@ -49,7 +50,7 @@
             <div class='header container'><div class='inner'>
               <nav class='navbar navbar-expand-lg'>
                 <a href='/' class='navbar-brand lucas-burns'>
-                  <img class='home-logo' src="../images/Logo.png" alt='logo'/>
+                  <img class='home-logo' src="/img/Logo.png" alt='logo'/>
                 </a>
                 <div class='header-info'>
                 <p class='header-name'>Lucas Burns</p>
@@ -104,11 +105,11 @@
         <div class="header-title-img container">
             <div class="row">
                 <h1 class="header-title">Providing services in <span class="header-bold">Ottawa</span> and throughout <span class="header-bold">Ontario</span></h1>
-                <img class='lucas-burns-header-img' src="/images/lucasburns.png" alt='Lucas Burns' /> 
+                <img class='lucas-burns-header-img' src="/img/lucasburns.png" alt='Lucas Burns' /> 
             </div>
         </div>
         <div class="martel-img-wrapper">
-            <img class='martel-header-img' src="/images/martelimage.jpeg" alt=''/>
+            <img class='martel-header-img' src="/img/martelimage.jpeg" alt=''/>
         </div>
         <section id='services' class="services center">
             <div class="container">
@@ -294,13 +295,17 @@
                   <h2>Check out my Blog</h2>
                   <div>
                     
-                        <article>
-                            <img src="//images.ctfassets.net/3uk34yq9t6vg/5CuJZqhDb6cDyAPwmz2nvz/606d1d497a04bb41525b1ea3c3189b77/15f77261c0cb49a291debb67ec7f10c1__1_.webp?w=400" />
-                            <h3>Ontario Hidden Summer Gems</h3>
-                            <p>2022-07-01T00:00-04:00</p>
-                            <p><p>Enough about rates ... Lets talk about some summer adventures within Ontario</p><p>Ontario is a beautiful province that I love to explore. There are so many beautiful hidden gems and beautiful places you should check out this month, be it alone or with your family! Let me share a few of my favourites with you!</p>
-                            <a href="/blog/ontario-hidden-summer-gems">Read the post</a>
-                        </article>
+                    <div className="blog--wrapper card" id=>
+                        <div className="blog-teaser">
+                                <div className="blog__image">
+                                  <img src="//images.ctfassets.net/3uk34yq9t6vg/5CuJZqhDb6cDyAPwmz2nvz/606d1d497a04bb41525b1ea3c3189b77/15f77261c0cb49a291debb67ec7f10c1__1_.webp?w=400" />
+                                </div>
+                                <div className="blog__date">2022-07-01T00:00-04:00</div>
+                                <div className="blog__title">Ontario Hidden Summer Gems</div>
+                                <div className="blog__description"><p>Enough about rates ... Lets talk about some summer adventures within Ontario</p><p>Ontario is a beautiful province that I love to explore. There are so many beautiful hidden gems and beautiful places you should check out this month, be it alone or with your family! Let me share a few of my favourites with you!</p></div>
+                                <a href=/blog/ontario-hidden-summer-gems>Read full story </a>
+                        </div>
+                      </div>
                     
                   
                     </div>
@@ -322,7 +327,7 @@
                     <p class="footer-mortgage-info">Mortgage Agent (Level 2)</p>
                     <p class="footer-mortgage-licence-info">Licence #M20001298</p>
                     <a href='https://martelmortgages.ca/'>
-                        <img class='footer-martel-logo' src="/images/martellogo.jpeg" alt='martel logo'/>
+                        <img class='footer-martel-logo' src="/img/martellogo.jpeg" alt='martel logo'/>
                     </a>
                 </div>
                 <div class="martel-head-office center col-lg-4">
@@ -346,16 +351,16 @@
                     </div>
                     <div class="social-icons">
                         <a class="social-icon" href='https://www.facebook.com/search/top?q=lucas%20burns%20-%20martel%20mortgages%20-%20licensed%20mortgage%20agent'>
-                            <img class="color" src="../images/facebook.svg" alt='facebook logo' />
-                            <img class="black" src="../images/black-facebook.png" alt='facebook logo' />
+                            <img class="color" src="/img/facebook.svg" alt='facebook logo' />
+                            <img class="black" src="/img/black-facebook.png" alt='facebook logo' />
                         </a>
                         <a class="social-icon" href='https://www.linkedin.com/in/lucas-burns-b74b14/'>
-                            <img class="color" src="../images/linkedin.svg" alt='linkedin logo' />
-                            <img class="black" src="../images/black-linkedin.svg" alt='linkedin logo' />
+                            <img class="color" src="/img/linkedin.svg" alt='linkedin logo' />
+                            <img class="black" src="/img/black-linkedin.svg" alt='linkedin logo' />
                         </a>
                         <a class="social-icon" href='https://www.instagram.com/lucasburnsmortgages/'>
-                            <img class="color" src="../images/instagram.svg" alt='instagram logo' />
-                            <img class="black" src="../images/black-instagram.png" alt='instagram logo' />
+                            <img class="color" src="/img/instagram.svg" alt='instagram logo' />
+                            <img class="black" src="/img/black-instagram.png" alt='instagram logo' />
                         </a>
                     </div>
                 </div>

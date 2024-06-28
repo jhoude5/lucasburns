@@ -7,11 +7,11 @@
   position: relative;
   padding-bottom: 20px;
 }
-.testimonials .row .gatsby-image-wrapper {
+.testimonials .row .teaser-grid__image {
   position: relative;
   margin: 20px 0 0 20px;
 }
-.testimonials .row .gatsby-image-wrapper img {
+.testimonials .row .teaser-grid__image img {
   max-width: 150px;
   max-height: 150px;
   border-radius: 100%;
