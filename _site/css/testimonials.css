@@ -12,8 +12,8 @@
   margin: 20px 0 0 20px;
 }
 .testimonials .row .teaser-grid__image img {
-  max-width: 150px;
-  max-height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
 .testimonials .row .testimonial-grid__description {
@@ -62,10 +62,12 @@
 }
 
 .testimonials .testimonial--wrapper {
-  background-color: #76C7F9;
+  background-color: #11B5DF;
   opacity: 70%;
   position: relative;
   margin-bottom: 80px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 4px grey;
 }
 .testimonials .testimonial--wrapper .testimonial__image {
   position: absolute;

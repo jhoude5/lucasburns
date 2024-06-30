@@ -2,6 +2,8 @@
     background-color: #76C7F9;
     .blog--wrapper  {
         padding: 20px;
+        background-color: white;
+        border-radius: 30px;
         .blog__title {
             font-weight: bold;
             font-size: 22px;
@@ -31,7 +33,7 @@
         }
     }
 }
-.blog-wrapper:nth-child(2) {
+.blog--wrapper:nth-child(2) {
     flex-direction: row-reverse;
     .blog-img-wrapper {
         img {

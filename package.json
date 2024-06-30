@@ -17,6 +17,8 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@contentful/rich-text-html-renderer": "^16.6.1",
+    "@contentful/rich-text-links": "^16.7.1",
+    "@contentful/rich-text-react-renderer": "^15.22.1",
     "graphql": "^16.0.0",
     "graphql-request": "^3.6.1"
   },

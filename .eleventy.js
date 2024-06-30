@@ -12,7 +12,8 @@ module.exports = function (eleventyConfig) {
     });
     eleventyConfig.addFilter("renderRichTextAsHtml", (value) =>
     documentToHtmlString(value)
-  );
+    );
+    eleventyConfig.addPassthroughCopy("bundle.js");
     // eleventyConfig.addPassthroughCopy({ "images/favicon": "/" });
     eleventyConfig.addPassthroughCopy("img");
 
@@ -21,10 +22,3 @@ module.exports = function (eleventyConfig) {
   };
   
 };
-// module.exports = (cfg) => {
-//     cfg.addPassthroughCopy("images");
-// }
-
-// module.exports = function (eleventyConfig) {
-  
-// };

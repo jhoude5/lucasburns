@@ -16,20 +16,20 @@ layout: layout.html
                 <div class="row">
                 <h2>Services Offered</h2>
                   <div class="col-lg-3">
-                    <img class='service-logos' src='/images/refinanceicon.png' alt='' />
+                    <img class='service-logos' src='/img/refinanceicon.png' alt='' />
                     <h3>Mortgage Renewals</h3>
                   </div>
                   <div class="col-lg-3">
-                    <img class='service-logos' src='/images/houselogo.png' alt='' />
+                    <img class='service-logos' src='/img/houselogo.png' alt='' />
                     <h3>Purchases</h3>
                   </div>
                   <div class="col-lg-3">
-                    <img class='service-logos' src='/images/consolidationicon.png' alt='' />
+                    <img class='service-logos' src='/img/consolidationicon.png' alt='' />
                     <h3>Refinancing/Debt Consolidation</h3>
                   </div>
                   <div class="col-lg-3">
-                    <img class='service-logos' src='/images/helocicon.png' alt='' />
-                    <h3>HEMLOC</h3>
+                    <img class='service-logos' src='/img/helocicon.png' alt='' />
+                    <h3>HELOC</h3>
                     <p>Home Equity Line of Credit</p>
                   </div>
                   <a href='/mortgages' class="btn btn-primary">Learn more</a>
@@ -54,7 +54,7 @@ layout: layout.html
               </div>
               <div class="col-lg-7">
                 <script src="https://www.ratehub.ca/scripts/rh-widget-loader.js" rh-title="Mortgage Payment Calculator" rh-frame-title="Ratehub.ca mortgage payment calculator" rh-widget-key="PaymentCalculator"></script>
-                <div style="text-align:right; font-size:0.8em"><span style="font-family:sans-serif; color:#6a787c; display:inline-block;">powered by <a rel="nofollow" href="https://www.ratehub.ca/?offer_id=2 " style="display:inline-block;width:6em;"><img src="https://www.ratehub.ca/static/logo_ratehub_full_dark.svg" style="width:100%;vertical-align:text-top;" alt="Ratehub.ca "></a></span></div>
+                <div style="text-align:right; font-size:0.8em"><span style="font-family:sans-serif; color:#6a787c; display:inline-block;">powered by <img src="https://www.ratehub.ca/static/logo_ratehub_full_dark.svg" style="width:100%;vertical-align:text-top;" alt="Ratehub.ca "></span></div>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ layout: layout.html
                     <h2 class="center">Testimonials</h2>
                     {% for testimonial in testimonials.slice(0,2) %}
                         
-                            <div class="testimonial--wrapper col-lg-5 card" id={{ testimonial.fields.id }}>
+                            <div class="testimonial--wrapper col card">
                                 <div class="testimonial-grid">
                                     <div class="teaser-grid__image">
                                           <img src="{{ testimonial.fields.image.fields.file.url }}" />
@@ -170,18 +170,18 @@ layout: layout.html
                     {% endfor %}
                 
                       <a href='/testimonials' class="see-all-link">See all testimonials
-                        <img src="/images/rightarrow.png" alt="" />
+                        <img src="/img/rightarrow.png" alt="" />
                       </a>
                 </div>
               </div>
         </section>
         <section id='blog' class="blogs">
-            <div class="container center">
+            <div class="container">
                 <div class="row">
-                  <h2>Check out my Blog</h2>
-                  <div>
+                  <h2 class="center">Check out my Blog</h2>
+                  
                     {% for blog in blogs.slice(0,1) %}
-                    <div className="blog--wrapper card" id={{ blog.fields.id }}>
+                    <div className="blog--wrapper card">
                         <div className="blog-teaser">
                                 <div className="blog__image">
                                   <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" />
@@ -194,9 +194,9 @@ layout: layout.html
                       </div>
                     {% endfor %}
                   
-                    </div>
+                    
                       <a href='/blogs' class="see-all-link">See all blogs
-                        <img src="/images/rightarrow.png" alt="" />
+                        <img src="/img/rightarrow.png" alt="" />
                       </a>
                 </div>
               </div>

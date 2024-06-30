@@ -29,13 +29,6 @@ p {
   visibility: hidden;
 }
 
-#back-to-top {
-  left: 200px;
-  bottom: 300px;
-  background-color: #0B4470;
-  box-shadow: none;
-}
-
 .center {
   text-align: center;
 }
@@ -66,6 +59,29 @@ section {
   background-color: white;
   color: #0B4470;
   border: 2px solid #0B4470;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 100px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+  border: 3px solid #0B4470;
+}
+#myBtn:hover, #myBtn:focus {
+  background-color: #D9D9D9;
+}
+#myBtn img {
+  width: 30px;
 }
 
 /*# sourceMappingURL=base.css.map */

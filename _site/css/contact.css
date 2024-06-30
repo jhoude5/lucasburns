@@ -3,7 +3,7 @@
 }
 .contact-us-section .contact-us {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 .contact-us-section .contact-us .form-group {
   display: flex;

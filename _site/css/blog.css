@@ -3,6 +3,8 @@
 }
 .blogs .blog--wrapper {
   padding: 20px;
+  background-color: white;
+  border-radius: 30px;
 }
 .blogs .blog--wrapper .blog__title {
   font-weight: bold;
@@ -31,10 +33,10 @@
   transition: 1s;
 }
 
-.blog-wrapper:nth-child(2) {
+.blog--wrapper:nth-child(2) {
   flex-direction: row-reverse;
 }
-.blog-wrapper:nth-child(2) .blog-img-wrapper img {
+.blog--wrapper:nth-child(2) .blog-img-wrapper img {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-left-radius: 0;
