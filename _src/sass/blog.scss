@@ -92,7 +92,15 @@
     
 }
 .blogs-landing-page {
-    
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        @media(min-width: 1024px) {
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        
+    }
     .blog--wrapper:nth-child(2n) {
         flex-direction: row-reverse;
         .blog-img-wrapper {
