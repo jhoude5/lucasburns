@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
     documentToHtmlString(value)
     );
     eleventyConfig.addPassthroughCopy("bundle.js");
-    // eleventyConfig.addPassthroughCopy({ "images/favicon": "/" });
+    eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
     eleventyConfig.addPassthroughCopy("img");
 
   return {

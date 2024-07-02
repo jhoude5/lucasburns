@@ -3,13 +3,22 @@
     
     .contact-us {
         max-width: 900px;
-        margin: 40px auto 0;
+        margin: 20px auto 0;
+        @media(min-width: 768px) {
+            margin: 40px auto 0;
+        }
         .form-group {
-            display: flex;
+            
             margin-bottom: 20px;
+            @media(min-width: 768px) {
+                display: flex;
+            }
             label {
                 margin-right: 20px;
-                width: 20%;
+                
+                @media(min-width: 768px) {
+                    width: 20%;
+                }
             }
             input, 
             textarea {
@@ -20,7 +29,10 @@
             
         }
         button {
-            margin-left: 160px
+            @media(min-width: 768px) {
+                margin-left: 160px
+            }
+            
         }
     }
 }

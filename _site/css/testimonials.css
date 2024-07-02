@@ -1,7 +1,11 @@
 .testimonials .row {
   justify-content: center;
-  gap: 20px;
-  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .testimonials .row {
+    gap: 20px;
+    margin: 0 auto;
+  }
 }
 .testimonials .row .card {
   position: relative;
@@ -62,12 +66,19 @@
 }
 
 .testimonials .testimonial--wrapper {
+  flex: auto;
   background-color: #11B5DF;
   opacity: 70%;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   border-radius: 30px;
   box-shadow: 3px 3px 4px grey;
+}
+@media (min-width: 768px) {
+  .testimonials .testimonial--wrapper {
+    flex: 1 0 0%;
+    margin-bottom: 80px;
+  }
 }
 .testimonials .testimonial--wrapper .testimonial__image {
   position: absolute;

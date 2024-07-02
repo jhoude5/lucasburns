@@ -181,15 +181,17 @@ layout: layout.html
                   <h2 class="center">Check out my Blog</h2>
                   
                     {% for blog in blogs.slice(0,1) %}
-                    <div className="blog--wrapper card">
-                        <div className="blog-teaser">
-                                <div className="blog__image">
+                    <div class="blog--wrapper card">
+                        <div class="blog-teaser">
+                                <div class="blog__image">
                                   <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" />
                                 </div>
-                                <div className="blog__date">{{ blog.fields.date }}</div>
-                                <div className="blog__title">{{ blog.fields.blogTitle }}</div>
-                                <div className="blog__description">{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}</div>
-                                <a href=/blog/{{ blog.fields.blogTitle | slug }}>Read full story </a>
+                                <div class="blog__info">
+                                    <div id="blog-date" class="blog__date">{{ blog.fields.date }}</div>
+                                    <div class="blog__title h2">{{ blog.fields.blogTitle }}</div>
+                                    <div class="blog__description">{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}</div>
+                                    <a href=/blog/{{ blog.fields.blogTitle | slug }}>Read full story </a>
+                                </div>
                         </div>
                       </div>
                     {% endfor %}

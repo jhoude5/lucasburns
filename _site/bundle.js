@@ -15,3 +15,10 @@
               scrollTop: 0
           }, 700);
       });
+      
+    if(document.getElementById("blog-date") != null){
+        var blogDate = document.getElementById("blog-date").innerHTML;
+        var oldDate = Date.parse(blogDate);
+        var date = new Date(oldDate).toLocaleDateString("en-US");
+        document.getElementById("blog-date").innerHTML = date;
+    }
