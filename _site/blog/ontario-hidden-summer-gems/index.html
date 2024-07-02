@@ -21,7 +21,7 @@
           <script type="application/ld+json">
           {"@context":"https://schema.org","@type":"WebSite","description":"Portfolio","headline":"Jennifer Houde","name":"Jennifer Houde","url":"http://localhost:4000/"}</script>
           <!-- End Jekyll SEO tag -->
-          
+          <script src="luxon.js"></script>
           <link rel="shortcut icon" type="image/png" href="favicon.png">
           <script src="https://kit.fontawesome.com/253980a83a.js" crossorigin="anonymous"></script>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -38,6 +38,7 @@
           <link rel="stylesheet" href="/css/subscribe.css">
           <link rel="stylesheet" href="/css/testimonials.css">
           <link rel="stylesheet" href="/css/blog.css">
+          <link rel="stylesheet" href="/css/mortgages.css">
           <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jennifer Houde" />
           </head>
 	</head>
@@ -49,72 +50,87 @@
                     <a class="btn btn-secondary btn-header" href='https://calendly.com/lucasburns-mortgage-agent/phone-call'>Book an Appointment</a>   
                 </div>
             </div>
-            <div class='header container'><div class='inner'>
-              <nav class='navbar navbar-expand-lg'>
-                <a href='/' class='navbar-brand lucas-burns'>
-                  <img class='home-logo' src="/img/Logo.png" alt='logo'/>
-                </a>
-                <div class='header-info'>
-                <p class='header-name'>Lucas Burns</p>
-                <p class='header-mortgage-info'>Mortgage Agent (Level 2)</p>
-                <p class='header-martel-info'>Martel Mortgages</p>
-                </div>
+            <div class='header container'>
+                <div class='inner'>
+                    <nav class='navbar navbar-expand-lg'>
+                        <a href='/' class='navbar-brand lucas-burns'>
+                        <img class='home-logo' src="/img/Logo.png" alt='logo'/>
+                        </a>
+                        <div class='header-info'>
+                            <p class='header-name'>Lucas Burns</p>
+                            <p class='header-mortgage-info'>Mortgage Agent (Level 2)</p>
+                            <p class='header-martel-info'>Martel Mortgages</p>
+                        </div>
                 
                 
-                <div class="collapse navbar-collapse nav-menu">
-                    <ul class='navbar-nav'>
-                    
-                        <li class='nav-item'><a class='nav-a' href='/#contact'>Contact</a></li>
-                        <li class='nav-item'><a class='nav-a' href='/blogs'>Blogs</a></li>
-                        <li class='nav-item'><a class='nav-a' href='#apply'>Apply Now</a></li>
-                        <li class='nav-item'><a class='nav-a' href='/testimonials'>Testimonials</a></li>
-                        
-                    </ul>
-                </div>
+                        <div class="collapse navbar-collapse nav-menu">
+                            <ul class='navbar-nav'>
+                            
+                                <li class='nav-item'><a class='nav-a' href='/#contact'>Contact</a></li>
+                                <li class='nav-item'><a class='nav-a' href='/blogs'>Blogs</a></li>
+                                <li class='nav-item'><a class='nav-a' href='#apply'>Apply Now</a></li>
+                                <li class='nav-item'><a class='nav-a' href='/testimonials'>Testimonials</a></li>
+                                
+                            </ul>
+                            
+                        </div>
              
-            </nav>
-            </div>
-          <div class="mobile-menu">
-            <div class='header-info'>
-              <p class='header-name'>Lucas Burns</p>
-              <p class='header-mortgage-info'>Mortgage Agent (Level 2)</p>
-              <p class='header-martel-info'>Martel Mortgages</p>
-              </div>
-            <ul class="mmenu--list">
+                    </nav>
+                    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="mobileFunction()" >
+                        <i class="fa fa-bars" id="mobile-open-icon"></i>
+                        <i class="fa-solid fa-xmark" id="mobile-close-icon"></i>
+                      </a>
+                </div>
             
-              <li class='mmenu--list__item'>
-                <a href='/#contact'>Contact</a>
-              </li>
-              
-              <li class='mmenu--list__item'>
-                <a href='#blog'>Blog</a>
-              </li>
-          
-              <li class='mmenu--list__item'>
-                <a href="#apply">Apply Now</a>
-              </li>
-          
-              <li class='mmenu--list__item'>
-                <a href="#testimonials">Testimonials</a>
-              </li>
-          
-            </ul>
-          </div>
+                <div class="mobile-menu" id="myLinks">
+                    <div class='mobile-header-info center'>
+                    <p class='header-name h2'>Lucas Burns</p>
+                    <p class='header-mortgage-info'>Mortgage Agent (Level 2)</p>
+                    <p class='header-martel-info'>Martel Mortgages</p>
+                    </div>
+                    <ul class="mmenu--list">
+                    
+                    <li class='mmenu--list__item'>
+                        <a href='/#contact'>Contact</a>
+                    </li>
+                    
+                    <li class='mmenu--list__item'>
+                        <a href='#blog'>Blog</a>
+                    </li>
+                
+                    <li class='mmenu--list__item'>
+                        <a href="#apply">Apply Now</a>
+                    </li>
+                
+                    <li class='mmenu--list__item'>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                
+                    </ul>
+                    <a class="btn btn-primary" href='https://calendly.com/lucasburns-mortgage-agent/phone-call'>Book an Appointment</a>   
+                </div>
+            </div>    
           
           
           </header>
 		<main>
-<div class="container"><div class="row">
-    <h1>Ontario Hidden Summer Gems</h1>
-    <img src="//images.ctfassets.net/3uk34yq9t6vg/5CuJZqhDb6cDyAPwmz2nvz/606d1d497a04bb41525b1ea3c3189b77/15f77261c0cb49a291debb67ec7f10c1__1_.webp?w=400" />
-    <div><p><b>Enough about rates ... Lets talk about some summer adventures within Ontario</b></p><p>Ontario is a beautiful province that I love to explore. There are so many beautiful hidden gems and beautiful places you should check out this month, be it alone or with your family! Let me share a few of my favourites with you!</p><p><b>Ontario Staycation Tax Credit 2022</b>
+<div class="container blog">
+    <div class="row">
+        <h1>Ontario Hidden Summer Gems</h1>
+        <img src="//images.ctfassets.net/3uk34yq9t6vg/5CuJZqhDb6cDyAPwmz2nvz/606d1d497a04bb41525b1ea3c3189b77/15f77261c0cb49a291debb67ec7f10c1__1_.webp?w=400" alt=""/>
+        <div class="blog-info"><p><b>Enough about rates ... Lets talk about some summer adventures within Ontario</b></p><p>Ontario is a beautiful province that I love to explore. There are so many beautiful hidden gems and beautiful places you should check out this month, be it alone or with your family! Let me share a few of my favourites with you!</p><p><b>Ontario Staycation Tax Credit 2022</b>
 </p><p>Ontario residents planning a staycation in Ontario in 2022 could get back up to 20% on eligible accommodation expenses with the new, temporary Ontario Staycation Tax Credit.</p><p>
-<a href="https://www.destinationontario.com/en-ca/ontario-staycation-tax-credit-2022"><b>Copy</b></a><b> &amp; paste this link for more info!</b></p><p>https://www.destinationontario.com/en-ca/ontario-staycation-tax-credit-2022</p><p><b></b></p><p><b>Deerhurst Resort</b></p><p><b>~ Muskoka ON</b>
-</p><p>This picturesque golf course has stunning views and a beautiful course. Located right near the Muskoka lakes it is a beautiful area to golf as well as experience other summer adventures!
+<b>Copy &amp; paste this link for more info!</b></p><p>https://www.destinationontario.com/en-ca/ontario-staycation-tax-credit-2022</p><hr/><p><b>Deerhurst Resort</b></p><p><b>~ Muskoka ON</b></p><p>This picturesque golf course has stunning views and a beautiful course. Located right near the Muskoka lakes it is a beautiful area to golf as well as experience other summer adventures!
 </p><p><b>River Run White Water Rafting</b></p><p><b>~ Foresters Falls, ON</b></p><p>Located on the Ottawa River, is this great spot to go White Water Rafting. It is such a fun activity to do on a hot summer day in Ontario. It is an activity I enjoy a lot myself!
-</p><p><b>The June Motel</b></p><p><b>~ Picton, ON</b></p><p><b>​The June Motel is a very unique, completely renovated, boutique motel located in Picton ON. It has a very hip style with many unique features. The June Motel was featured on a Netflix series called Motel Makeover, where it got a lot of attention because of its shocking makeover. This is a place you have to check out!</b></p><p><b></b></p><p><b>
+</p><p><b>The June Motel</b></p><p><b>~ Picton, ON</b></p><p>​The June Motel is a very unique, completely renovated, boutique motel located in Picton ON. It has a very hip style with many unique features. The June Motel was featured on a Netflix series called Motel Makeover, where it got a lot of attention because of its shocking makeover. This is a place you have to check out!</p><p><b></b></p><p><b>
 </b></p><p></p></div>
-    </div></div>
+        <a href='/blogs' class="see-all-link">Back to all blogs
+                        <img src="/img/rightarrow.png" alt="" />
+                      </a>
+    </div>
+</div>
+
+
     <section class="subscribe">
             <div class="subscribe">
     <div class="container">
@@ -145,10 +161,13 @@
 </div>
     </section>
 </main>
-<footer>
+
+        <script type="text/javascript" src="/bundle.js"></script>
+	</body>
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <h2>Lucas Burns</h2>
                     <p class="footer-mortgage-info">Mortgage Agent (Level 2)</p>
                     <p class="footer-mortgage-licence-info">Licence #M20001298</p>
@@ -156,7 +175,7 @@
                         <img class='footer-martel-logo' src="/img/martellogo.jpeg" alt='martel logo'/>
                     </a>
                 </div>
-                <div class="martel-head-office center col-lg-4">
+                <div class="martel-head-office center col-md-4">
                     <h3>Head Office</h3>
                     <p class="martel-info">Martel Mortgages<br/>
                         FSCO # 13015<br/>
@@ -165,7 +184,7 @@
                         1.855.320.2464 ext 118</p>
                     
                 </div>
-                <div class="lucas-burns-info center col-lg-4">
+                <div class="lucas-burns-info center col-md-4">
                     <h3>Telephone</h3>
                     <a href='tel:613-298-1522'>(613) 298-1522</a>
                     <h3 class="email">Email</h3>
@@ -194,8 +213,6 @@
             </div>
         </div>
     </footer>
-        <script type="text/javascript" src="/bundle.js"></script>
-	</body>
     <button id="myBtn" title="Go to top">
         <a href="#top"><img src="/img/uparrow.png" alt=""></a>
         </button>

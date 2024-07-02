@@ -1,4 +1,4 @@
-.testimonials {
+.testimonial {
     .row {
         justify-content: center;
         @media(min-width: 768px) {
@@ -8,6 +8,11 @@
         .card {
             position: relative;
             padding-bottom: 20px;
+        }
+        .testimonial--wrapper {
+            background-color: #76C7F9;
+            opacity: 70%;
+            margin-bottom: 20px;
         }
         .teaser-grid__image {
             position: relative;
@@ -19,7 +24,11 @@
             }
         }
         .testimonial-grid__description {
-            margin: 40px;
+            margin: 20px;
+            @media(min-width: 768px) {
+                margin: 40px;
+            }
+            
             p {
                 font-size: 20px;
             }
