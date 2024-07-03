@@ -141,8 +141,6 @@ layout: layout.html
                                 <textarea name="message"></textarea>
                             
                         </div>
-                        
-                        <!-- your other form fields go here -->
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </form>
     </div>
@@ -158,7 +156,7 @@ layout: layout.html
                             <div class="testimonial--wrapper col card">
                                 <div class="testimonial-grid">
                                     <div class="teaser-grid__image">
-                                          <img src="{{ testimonial.fields.image.fields.file.url }}" />
+                                          <img src="{{ testimonial.fields.image.fields.file.url }}" alt=""/>
                                         </div>
                                         <div class="testimonial-grid__description">{{ testimonial.fields.shortDescription | renderRichTextAsHtml | safe }}</div>
                                         <div class="testimonial-grid__title">{{testimonial.fields.name}}</div>
@@ -185,11 +183,11 @@ layout: layout.html
                     <div class="blog--wrapper card">
                         <div class="blog-teaser">
                                 <div class="blog__image">
-                                  <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" />
+                                  <img src="{{ blog.fields.mainImage.fields.file.url }}" alt="" />
                                 </div>
                                 <div class="blog__info">
-                                    <div id="blog-date" class="blog__date">{{ blog.fields.date }}</div>
-                                    <div class="blog__title h2">{{ blog.fields.blogTitle }}</div>
+                                    <div id="blog-date" class="blog__date">{{ blog.fields.date | postDate }}</div>
+                                    <div class="blog__title">{{ blog.fields.blogTitle }}</div>
                                     <div class="blog__description">{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}</div>
                                     <a href=/blog/{{ blog.fields.blogTitle | slug }}>Read full story </a>
                                 </div>

@@ -75,6 +75,15 @@
   transition: 1s;
 }
 
+.testimonials .row {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .testimonials .row {
+    gap: 20px;
+    margin: 0 auto;
+  }
+}
 .testimonials .testimonial--wrapper {
   flex: auto;
   background-color: #11B5DF;
@@ -90,28 +99,63 @@
     margin-bottom: 80px;
   }
 }
-.testimonials .testimonial--wrapper .testimonial__image {
-  position: absolute;
-  top: 33px;
-  left: -100px;
+.testimonials .testimonial--wrapper .teaser-grid__image {
+  position: relative;
+  margin: 20px 0 0 20px;
 }
-.testimonials .testimonial--wrapper .testimonial__image img {
-  max-width: 200px;
-  max-height: 200px;
+.testimonials .testimonial--wrapper .teaser-grid__image img {
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
-.testimonials .testimonial--wrapper .teaser-grid__description p {
-  font-size: 18px;
-  max-width: 986px;
-  margin: 80px auto 40px;
+.testimonials .testimonial--wrapper .testimonial-grid__description {
+  margin: 20px;
 }
-.testimonials .testimonial--wrapper .teaser-grid__title {
+@media (min-width: 768px) {
+  .testimonials .testimonial--wrapper .testimonial-grid__description {
+    margin: 40px;
+  }
+}
+.testimonials .testimonial--wrapper .testimonial-grid__description p {
+  font-size: 20px;
+}
+.testimonials .testimonial--wrapper .testimonial-grid__title {
+  margin: 20px 40px 40px;
   text-align: end;
-  max-width: 986px;
-  margin: 40px auto;
-  font-size: 24px;
-  font-weight: bold;
   color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+.testimonials .testimonial--wrapper .testimonial_link {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+.testimonials .testimonial--wrapper .testimonial_link:hover, .testimonials .testimonial--wrapper .testimonial_link:focus {
+  text-decoration: none;
+}
+.testimonials .see-all-link {
+  text-align: end;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+.testimonials .see-all-link:hover, .testimonials .see-all-link:focus {
+  text-decoration: underline;
+}
+.testimonials .see-all-link:hover img, .testimonials .see-all-link:focus img {
+  transform: translateX(70%);
+}
+.testimonials .see-all-link img {
+  max-width: 20px;
+  display: inline-block;
+  transform: translateX(20%);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=testimonials.css.map */

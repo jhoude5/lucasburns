@@ -26,13 +26,13 @@ eleventyComputed:
         {% for blog in blogs %}
                         <div class="blog--wrapper">
                             <div class="blog-img-wrapper">
-                                <img src="{{ blog.fields.mainImage.fields.file.url }}?w=400" alt="{{ blog.fields.mainImage.fields.file.description }}"/>
+                                <img src="{{ blog.fields.mainImage.fields.file.url }}" alt="{{ blog.fields.mainImage.fields.description }}"/>
                             </div>
                             <div class="blog-info-wrapper">
                                 <p id="blog-date">{{ blog.fields.date | postDate }}</p>
                                 <h2>{{ blog.fields.blogTitle }}</h2>
                                 <p>{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}
-                                <a href="/blog/{{ blog.fields.blogTitle | slug }}">Read the post</a>
+                                <a href="/blog/{{ blog.fields.blogTitle | slug }}">Read full story</a>
                             </div>
                         
                     </div>
