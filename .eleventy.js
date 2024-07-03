@@ -14,14 +14,15 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("renderRichTextAsHtml", (value) =>
     documentToHtmlString(value)
     );
+    eleventyConfig.addFilter("postDate", dateObj => {
+      return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat("LLL dd, yyyy");
+    });
     eleventyConfig.addPassthroughCopy("bundle.js");
     // eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPlugin(faviconsPlugin, {});
     
-    eleventyConfig.addFilter("postDate", dateObj => {
-      return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
-    });
+    
 
   return {
     passthroughFileCopy: true
