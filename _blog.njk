@@ -4,7 +4,7 @@ pagination:
     data: blogs
     size: 1
     alias: blogs
-permalink:  "blog/{{ blogs.fields.blogTitle | slug }}/index.html"
+permalink:  "blog/{{ blogs.fields.urlPath | slug }}/index.html"
 eleventyComputed: 
     title: "{{ blogs.fields.blogTitle }}"
 ---
