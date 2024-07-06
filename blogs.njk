@@ -16,7 +16,7 @@ eleventyComputed:
                 <h2>Apply Now</h2>
                 <p>Get started now. Get pre-approved for a mortgage.</p>
                 <p>Secure Online Application.</p>
-                <a class='btn btn-primary' href='https://getmy.mortgage/yourfavottbrkr#/application-widget/welcome?locale=en-CA'>
+                <a class='btn btn-primary' target="_blank" href='https://getmy.mortgage/yourfavottbrkr#/application-widget/welcome?locale=en-CA'>
                     Start Application</a>
             </div>
     </section>
@@ -26,7 +26,7 @@ eleventyComputed:
         {% for blog in blogs %}
                         <div class="blog--wrapper">
                             <div class="blog-img-wrapper">
-                                <img src="{{ blog.fields.mainImage.fields.file.url }}" alt="{{ blog.fields.mainImage.fields.description }}"/>
+                                <img src="{{ blog.fields.mainImage.fields.file.url }}" alt=""/>
                             </div>
                             <div class="blog-info-wrapper">
                                 <p>{{ blog.fields.date | postDate }}</p>
@@ -60,9 +60,9 @@ eleventyComputed:
         method="POST"
       >
       <div class="form-group">
-        <label class="visually-hidden">Your email:</label>
+        <label class="visually-hidden" for="email">Your email:</label>
         
-            <input type="email" name="email" placeholder="Your email">
+            <input type="email" name="email" id="email" placeholder="Your email">
           
       </div>
         
