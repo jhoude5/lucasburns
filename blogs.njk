@@ -32,7 +32,7 @@ eleventyComputed:
                                 <p>{{ blog.fields.date | postDate }}</p>
                                 <h2>{{ blog.fields.blogTitle }}</h2>
                                 <p>{{ blog.fields.shortDescription | renderRichTextAsHtml | safe }}
-                                <a href="/blog/{{ blog.fields.blogTitle | slug }}">Read full story</a>
+                                <a href="/blog/{{ blog.fields.urlPath | slug }}">Read full story</a>
                             </div>
                         
                     </div>
